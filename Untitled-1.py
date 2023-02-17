@@ -1,12 +1,13 @@
 import statistics
 nbre1 = float (input ("Entrez le premier nombre : "))
 nbre2 = float (input ("Entrez le deueime nombre : "))
-somme = nbre1 + nbre2
-division = nbre1/nbre2
-soustraction = nbre1 - nbre2
-moyenne = (nbre1 + nbre2)/2
-ecart_type = statistics.stdev([nbre1, nbre1])
-liste = [nbre1, nbre2]
+nbre3 = float (input ("Entrez le troisieme nombre : ") )
+somme = nbre1 + nbre2 + nbre3
+division = nbre1/nbre2/nbre3
+soustraction = nbre1 - nbre2 - nbre3
+moyenne = (nbre1 + nbre2 + nbre3)/2
+ecart_type = statistics.stdev([nbre1, nbre1, nbre3])
+liste = [nbre1, nbre2, nbre3]
 liste.sort()
 if len(liste)% 2==0:
     medianne = (liste[len(liste)//2] + liste[len(liste)//2-1])/2
